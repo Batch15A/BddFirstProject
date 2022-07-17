@@ -1,14 +1,16 @@
 package com.osa.base;
 
-import org.openqa.selenium.WebDriver;
+import java.util.concurrent.TimeUnit;
 
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
 public class Browser {
-	//public WebDriver openBrowser() {
-		// take browser name as parameter.  
-		//if else condition to open the browser for chrome and firefox
-		// maximize the  browes
-		// add implicitly wait
-		// then return the driver
-		//return dr;
-	//}
+	public static WebDriver openBrowser() {
+		WebDriver dr;
+		System.setProperty("webdriver.chrome.driver","C:\\Users\\Md Obaidulla\\Desktop\\drivers\\Drivers\\chromedriver.exe");
+		dr=new ChromeDriver();
+		dr.manage().window().maximize();
+		dr.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
+		return dr;
+	}
 }

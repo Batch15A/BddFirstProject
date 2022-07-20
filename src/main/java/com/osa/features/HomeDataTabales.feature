@@ -6,3 +6,4 @@ Feature: We will learn how data table is work in cucumber
 				|"user1@gmail.com"|"pass1"|
 		When I click on login button
     Then I verify that I am on student page
+    And I want to close the browser

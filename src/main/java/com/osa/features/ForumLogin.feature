@@ -1,5 +1,5 @@
 Feature: Verifing OSA Consulting Tech Corp Forum Loging
-
+	@regression @smok @simple
   Scenario Outline: As a OSA registered user, I should be able to login in Forum by using my valid username and Password
     Given I am on OSA forum page
     And I enter username <username>
@@ -11,7 +11,7 @@ Feature: Verifing OSA Consulting Tech Corp Forum Loging
       | username          | password |
       | "user1@gmail.com" | "pass1"  |
       | "user2@gmail.com" | "pass2"  |
-      | "user3@gmail.com" | "pass3"  |
-      | "user4@gmail.com" | "pass4"  |
-      | "user5@gmail.com" | "pass5"  |
-      | "user6@gmail.com" | "pass6"  |
+      #| "user3@gmail.com" | "pass3"  |
+      #| "user4@gmail.com" | "pass4"  |
+      #| "user5@gmail.com" | "pass5"  |
+      #| "user6@gmail.com" | "pass6"  |

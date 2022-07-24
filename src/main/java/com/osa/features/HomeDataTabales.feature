@@ -1,5 +1,5 @@
 Feature: We will learn how data table is work in cucumber
-
+	@regression
 	Scenario: I should be able to pass data from feature file data table
 		Given I am on OSA forum page
 		And I enter user login credentials

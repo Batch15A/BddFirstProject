@@ -9,6 +9,7 @@ import io.cucumber.junit.CucumberOptions;
 @CucumberOptions(//cucumber options properties and values
 		features = {"src/main/java/com/osa/features"},
 		glue="com.osa.steps",
+		tags = {"@regression"},
 		plugin = {"pretty", "html:target/cucumber-reports" },
 		monochrome=true)
 public class RunQA {
